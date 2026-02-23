@@ -1,0 +1,899 @@
+<!doctype html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>SafeHouse</title>
+
+    <!-- FAVICONS -->
+    <link rel="icon" type="image/x-icon" href="./assets/images/favicon/favicon.ico" />
+    <link rel="icon" type="image/svg+xml" href="./assets/images/favicon/favicon.svg" />
+    <link rel="icon" type="image/png" sizes="96x96" href="./assets/images/favicon-96x96.png" />
+    <link rel="apple-touch-icon" href="./assets/images/favicon/apple-touch-icon.png" />
+    <link rel="manifest" href="./assets/images/favicon/site.webmanifest" />
+
+  <script type="module" crossorigin src="./assets/js/main.min.js"></script>
+  <link rel="modulepreload" crossorigin href="./assets/js/vendor.min.js">
+  <link rel="stylesheet" crossorigin href="./assets/css/style.min.css">
+</head>
+<body>
+    <div class="wrapper" id="main">
+        <header class="header">
+            <div class="header__container">
+                <div class="header__logo"><img src="./assets/images/logo.png" alt="logosafe house" /></div>
+        
+                <div class="header__menu menu" data-anim="fade-down">
+                    <nav class="menu__nav">
+                        <ul>
+                            <li>
+                                <a href="#hero">Home</a>
+                            </li>
+                            <li>
+                                <a href="#service">Service</a>
+                            </li>
+                            <li>
+                                <a href="#about-us">About us</a>
+                            </li>
+                            <li>
+                                <a href="#reviews">Review</a>
+                            </li>
+                        </ul>
+                    </nav>
+        
+                    <div class="menu__social social">
+                        <ul class="social__list">
+                            <li class="social__item">
+                                <a href="#" class="social__link" aria-label="Facebook" target="_blank" rel="noopener">
+                                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="20" cy="20" r="20" fill="#0068BE" />
+                                        <path
+                                            d="M21.2409 28V20.7022H23.6895L24.0569 17.8573H21.2409V16.0412C21.2409 15.2178 21.4686 14.6566 22.6507 14.6566L24.156 14.656V12.1114C23.8957 12.0776 23.0021 12 21.9621 12C19.7904 12 18.3037 13.3256 18.3037 15.7594V17.8573H15.8477V20.7022H18.3037V28H21.2409Z"
+                                            fill="white" />
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="social__item">
+                                <a href="#" class="social__link" aria-label="Instagram" target="_blank" rel="noopener">
+                                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="20" cy="20" r="20" fill="url(#paint0_linear_62_1027)" />
+                                        <g clip-path="url(#clip0_62_1027)">
+                                            <path
+                                                d="M27.9836 16.704C27.9461 15.8539 27.8086 15.2694 27.6117 14.763C27.4085 14.2254 27.096 13.7441 26.6865 13.344C26.2864 12.9377 25.8019 12.6219 25.2705 12.422C24.7612 12.225 24.1797 12.0875 23.3296 12.0501C22.4731 12.0094 22.2012 12 20.0289 12C17.8566 12 17.5847 12.0094 16.7314 12.0469C15.8812 12.0844 15.2968 12.222 14.7905 12.4188C14.2528 12.6219 13.7715 12.9345 13.3714 13.344C12.965 13.7441 12.6494 14.2286 12.4493 14.7599C12.2524 15.2694 12.1149 15.8507 12.0774 16.7009C12.0367 17.5574 12.0273 17.8293 12.0273 20.0016C12.0273 22.1739 12.0367 22.4458 12.0742 23.2991C12.1117 24.1492 12.2493 24.7337 12.4462 25.2401C12.6494 25.7777 12.965 26.259 13.3714 26.6591C13.7715 27.0654 14.2559 27.3812 14.7873 27.5812C15.2968 27.7781 15.8781 27.9156 16.7283 27.9531C17.5815 27.9907 17.8536 28 20.0259 28C22.1982 28 22.4701 27.9907 23.3234 27.9531C24.1735 27.9156 24.758 27.7781 25.2643 27.5812C26.3396 27.1654 27.1897 26.3153 27.6055 25.2401C27.8023 24.7306 27.9399 24.1492 27.9774 23.2991C28.0148 22.4458 28.0242 22.1739 28.0242 20.0016C28.0242 17.8293 28.0211 17.5574 27.9836 16.704ZM26.5428 23.2366C26.5083 24.018 26.3771 24.4399 26.2677 24.7212C25.9988 25.4183 25.4456 25.9715 24.7486 26.2403C24.4673 26.3497 24.0423 26.481 23.2639 26.5153C22.42 26.5529 22.1669 26.5622 20.0321 26.5622C17.8973 26.5622 17.641 26.5529 16.8001 26.5153C16.0187 26.481 15.5968 26.3497 15.3155 26.2403C14.9686 26.1121 14.6529 25.909 14.3966 25.6433C14.1309 25.3838 13.9277 25.0713 13.7995 24.7244C13.6901 24.4431 13.5589 24.018 13.5246 23.2397C13.487 22.3958 13.4777 22.1426 13.4777 20.0078C13.4777 17.873 13.487 17.6167 13.5246 16.776C13.5589 15.9946 13.6901 15.5726 13.7995 15.2913C13.9277 14.9443 14.1309 14.6287 14.3998 14.3723C14.6591 14.1066 14.9716 13.9034 15.3186 13.7754C15.5999 13.666 16.0251 13.5347 16.8033 13.5003C17.6472 13.4628 17.9004 13.4534 20.0351 13.4534C22.1731 13.4534 22.4262 13.4628 23.2671 13.5003C24.0485 13.5347 24.4704 13.666 24.7518 13.7754C25.0986 13.9034 25.4144 14.1066 25.6706 14.3723C25.9363 14.6317 26.1395 14.9443 26.2677 15.2913C26.3771 15.5726 26.5083 15.9976 26.5428 16.776C26.5802 17.6199 26.5896 17.873 26.5896 20.0078C26.5896 22.1426 26.5802 22.3927 26.5428 23.2366Z"
+                                                fill="white" />
+                                            <path
+                                                d="M20.0281 15.8906C17.759 15.8906 15.918 17.7316 15.918 20.0008C15.918 22.27 17.759 24.111 20.0281 24.111C22.2974 24.111 24.1383 22.27 24.1383 20.0008C24.1383 17.7316 22.2974 15.8906 20.0281 15.8906ZM20.0281 22.667C18.5561 22.667 17.362 21.473 17.362 20.0008C17.362 18.5286 18.5561 17.3346 20.0281 17.3346C21.5004 17.3346 22.6943 18.5286 22.6943 20.0008C22.6943 21.473 21.5004 22.667 20.0281 22.667Z"
+                                                fill="white" />
+                                            <path
+                                                d="M25.261 15.7281C25.261 16.258 24.8313 16.6876 24.3013 16.6876C23.7714 16.6876 23.3418 16.258 23.3418 15.7281C23.3418 15.1981 23.7714 14.7686 24.3013 14.7686C24.8313 14.7686 25.261 15.1981 25.261 15.7281Z"
+                                                fill="white" />
+                                        </g>
+                                        <defs>
+                                            <linearGradient id="paint0_linear_62_1027" x1="29.5" y1="1.5" x2="10.5" y2="38"
+                                                gradientUnits="userSpaceOnUse">
+                                                <stop stop-color="#B3005D" />
+                                                <stop offset="1" stop-color="#D0A000" />
+                                            </linearGradient>
+                                            <clipPath id="clip0_62_1027">
+                                                <rect width="16" height="16" fill="white" transform="translate(12 12)" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+        
+                    <button class="menu__btn" type="button" data-popup-target="#contact-us">
+                        <svg class="icon">
+                            <use href="./assets/images/sprite.svg#icon-phone"></use>
+                        </svg>
+                        Call to Us
+                    </button>
+                </div>
+        
+                <button class="header__burger js-menu-trigger" type="button" aria-label="open menu">
+                    <span></span>
+                </button>
+            </div>
+        </header>
+        <main class="page page--main">
+            <!-- HERO SECTION -->
+            <section class="hero" id="hero">
+                <div class="hero__container">
+                    <h1 class="hero__title" data-anim="fade-up">
+                        Remodeling, Custom Woodwork & <span>Home Additions in Seattle</span>
+                    </h1>
+                    <div class="hero__content">
+                        <p class="hero__text" data-anim="fade-up" data-anim-delay="0.3">
+                            Complete construction services for kitchens, bathrooms, custom millwork, staircases,
+                            floors, doors, and home extensions - built with quality, precision, and care
+                        </p>
+                        <button class="hero__btn" data-anim="fade-up" data-anim-delay="0.5"
+                            data-popup-target="#contact-us" type="button">
+                            <svg class="icon">
+                                <use href="./assets/images/sprite.svg#icon-phone"></use>
+                            </svg>
+                            <span>Get a Free Estimate</span>
+                        </button>
+                    </div>
+
+                    <div class="hero__slider" data-anim="fade-up" data-anim-delay="0.7">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="./assets/images/hero.jpg" alt="hero">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./assets/images/services.jpg" alt="hero">
+                            </div>
+                        </div>
+                        <div class="swiper-button-prev">
+                            <svg class="icon">
+                                <use href="./assets/images/sprite.svg#icon-arrow-prev"></use>
+                            </svg>
+                        </div>
+                        <div class="swiper-button-next">
+                            <svg class="icon">
+                                <use href="./assets/images/sprite.svg#icon-arrow-next"></use>
+                            </svg>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+
+                    <ul class="hero__list" data-anim-stagger="true">
+                        <li class="hero__item">
+                            <div class="hero__num"><span>67</span>%
+                            </div>
+                            <div class="hero__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                            </div>
+                        </li>
+                        <li class="hero__item">
+                            <div class="hero__num"><span>39</span>%
+                            </div>
+                            <div class="hero__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                            </div>
+                        </li>
+                        <li class="hero__item">
+                            <div class="hero__num"><span>44</span>%
+                            </div>
+                            <div class="hero__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                            </div>
+                        </li>
+                        <li class="hero__item">
+                            <div class="hero__num"><span>25</span>%
+                            </div>
+                            <div class="hero__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- REVIEWS SECTION -->
+            <section class="section reviews" id="reviews">
+                <div class="reviews__container">
+                    <h2 class="reviews__title title" data-anim="fade-up">review</h2>
+
+                    <div class="reviews__slider">
+                        <div class="swiper-wrapper" data-anim-stagger="true">
+                            <div class="swiper-slide">
+                                <div class="review-cart">
+                                    <div class="review-cart__img">
+                                        <img src="./assets/images/user01.jpg" alt="Sarah Jonson">
+                                    </div>
+                                    <div class="review-cart__content">
+                                        <div class="review-cart__top">
+                                            <h3 class="review-cart__name">Sarah Jonson</h3>
+                                            <div class="review-cart__date">Jan 15, 2026</div>
+                                        </div>
+                                        <div class="review-cart__value">Lorem Ipsum</div>
+                                        <div class="review-cart__rating rating">
+                                            <div class="rating-stars">
+                                                <div class="star-icon"></div>
+                                                <div class="star-icon"></div>
+                                                <div class="star-icon"></div>
+                                                <div class="star-icon"></div>
+                                                <div class="star-icon disabled"></div>
+                                            </div>
+                                        </div>
+                                        <div class="review-cart__text">
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                                tempor
+                                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                                quis nostrud
+                                                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="review-cart">
+                                    <div class="review-cart__img">
+                                        <img src="./assets/images/user02.jpg" alt="Piter Smith">
+                                    </div>
+                                    <div class="review-cart__content">
+                                        <div class="review-cart__top">
+                                            <h3 class="review-cart__name">Piter Smith</h3>
+                                            <div class="review-cart__date">Jan 15, 2026</div>
+                                        </div>
+                                        <div class="review-cart__value">Lorem Ipsum</div>
+                                        <div class="review-cart__rating rating">
+                                            <div class="rating-stars">
+                                                <div class="star-icon"></div>
+                                                <div class="star-icon"></div>
+                                                <div class="star-icon"></div>
+                                                <div class="star-icon"></div>
+                                                <div class="star-icon disabled"></div>
+                                            </div>
+                                        </div>
+                                        <div class="review-cart__text">
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                                tempor
+                                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                                quis nostrud
+                                                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="review-cart">
+                                    <div class="review-cart__img">
+                                        <img src="./assets/images/user01.jpg" alt="Sarah Jonson">
+                                    </div>
+                                    <div class="review-cart__content">
+                                        <div class="review-cart__top">
+                                            <h3 class="review-cart__name">Sarah Jonson</h3>
+                                            <div class="review-cart__date">Jan 15, 2026</div>
+                                        </div>
+                                        <div class="review-cart__value">Lorem Ipsum</div>
+                                        <div class="review-cart__rating rating">
+                                            <div class="rating-stars">
+                                                <div class="star-icon"></div>
+                                                <div class="star-icon"></div>
+                                                <div class="star-icon"></div>
+                                                <div class="star-icon"></div>
+                                                <div class="star-icon disabled"></div>
+                                            </div>
+                                        </div>
+                                        <div class="review-cart__text">
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                                tempor
+                                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                                quis nostrud
+                                                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-nav" data-anim="fade-up" data-anim-delay="0.5">
+                            <div class="swiper-button-prev">
+                                <svg class="icon">
+                                    <use href="./assets/images/sprite.svg#icon-arrow-prev"></use>
+                                </svg>
+                            </div>
+                            <div class="swiper-button-next">
+                                <svg class="icon">
+                                    <use href="./assets/images/sprite.svg#icon-arrow-next"></use>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SERVICE SECTION -->
+            <section class="section service" id="service">
+                <div class="service__container">
+                    <h2 class="service__title title" data-anim="fade-up">service</h2>
+
+                    <div class="service__wrap" data-anim="fade-up" data-anim-delay="0.3">
+                        <ul class="service__list">
+                            <li class="service__item item-service active">
+                                <div class="item-service__wrap">
+                                    <h3 class="item-service__title">Kitchen Remodeling</h3>
+                                    <div class="item-service__text">Body text for whatever you’d like to say. Add main
+                                        takeaway
+                                        points, quotes, anecdotes.</div>
+
+                                    <button class="item-service__btn btn" data-popup-target="#contact-us" type="button">
+                                        <svg class="icon">
+                                            <use href="./assets/images/sprite.svg#icon-phone"></use>
+                                        </svg>
+                                        <span>Get a Free Estimate</span>
+                                    </button>
+                                    <div class="item-service__img">
+                                        <img src="./assets/images/services.jpg" alt="services">
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="service__item item-service">
+                                <div class="item-service__wrap">
+                                    <h3 class="item-service__title">Get a Free Estimate</h3>
+                                    <div class="item-service__text">Body text for whatever you’d like to say. Add main
+                                        takeaway
+                                        points, quotes, anecdotes.</div>
+
+                                    <button class="item-service__btn btn" data-popup-target="#contact-us" type="button">
+                                        <svg class="icon">
+                                            <use href="./assets/images/sprite.svg#icon-phone"></use>
+                                        </svg>
+                                        <span>Get a Free Estimate</span>
+                                    </button>
+                                    <div class="item-service__img">
+                                        <img src="./assets/images/project01.jpg" alt="services">
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="service__item item-service">
+                                <div class="item-service__wrap">
+                                    <h3 class="item-service__title">Bathroom Remodeling</h3>
+                                    <div class="item-service__text">Body text for whatever you’d like to say. Add main
+                                        takeaway
+                                        points, quotes, anecdotes.</div>
+
+                                    <button class="item-service__btn btn" data-popup-target="#contact-us" type="button">
+                                        <svg class="icon">
+                                            <use href="./assets/images/sprite.svg#icon-phone"></use>
+                                        </svg>
+                                        <span>Get a Free Estimate</span>
+                                    </button>
+                                    <div class="item-service__img">
+                                        <img src="./assets/images/project02.jpg" alt="services">
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="service__item item-service">
+                                <div class="item-service__wrap">
+                                    <h3 class="item-service__title">Custom Woodwork (Millwork)</h3>
+                                    <div class="item-service__text">Body text for whatever you’d like to say. Add main
+                                        takeaway
+                                        points, quotes, anecdotes.</div>
+
+                                    <button class="item-service__btn btn" data-popup-target="#contact-us" type="button">
+                                        <svg class="icon">
+                                            <use href="./assets/images/sprite.svg#icon-phone"></use>
+                                        </svg>
+                                        <span>Get a Free Estimate</span>
+                                    </button>
+                                    <div class="item-service__img">
+                                        <img src="./assets/images/services.jpg" alt="services">
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="service__item item-service">
+                                <div class="item-service__wrap">
+                                    <h3 class="item-service__title">Home Additions</h3>
+                                    <div class="item-service__text">Body text for whatever you’d like to say. Add main
+                                        takeaway
+                                        points, quotes, anecdotes.</div>
+
+                                    <button class="item-service__btn btn" data-popup-target="#contact-us" type="button">
+                                        <svg class="icon">
+                                            <use href="./assets/images/sprite.svg#icon-phone"></use>
+                                        </svg>
+                                        <span>Get a Free Estimate</span>
+                                    </button>
+                                    <div class="item-service__img">
+                                        <img src="./assets/images/services.jpg" alt="services">
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="service__item item-service">
+                                <div class="item-service__wrap">
+                                    <h3 class="item-service__title">Full Home Remodeling</h3>
+                                    <div class="item-service__text">Body text for whatever you’d like to say. Add main
+                                        takeaway
+                                        points, quotes, anecdotes.</div>
+
+                                    <button class="item-service__btn btn" data-popup-target="#contact-us" type="button">
+                                        <svg class="icon">
+                                            <use href="./assets/images/sprite.svg#icon-phone"></use>
+                                        </svg>
+                                        <span>Get a Free Estimate</span>
+                                    </button>
+                                    <div class="item-service__img">
+                                        <img src="./assets/images/services.jpg" alt="services">
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+
+                        <div class="service__media">
+                            <img class="service__img-item active" src="./assets/images/project01.jpg" alt="services">
+                            <img class="service__img-item" src="./assets/images/services.jpg" alt="services">
+                            <img class="service__img-item" src="./assets/images/project01.jpg" alt="services">
+                            <img class="service__img-item" src="./assets/images/services.jpg" alt="services">
+                            <img class="service__img-item" src="./assets/images/project01.jpg" alt="services">
+                            <img class="service__img-item" src="./assets/images/services.jpg" alt="services">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ABOUT US SECTION -->
+            <section class="section about" id="about-us">
+                <div class="about__container">
+                    <h2 class="about__title title" data-anim="fade-up">about us</h2>
+                    <div class="about__text" data-anim="fade-right" data-anim-delay="0.3">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                            voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                        </p>
+                    </div>
+                    <div class="about__slider">
+                        <div class="swiper-wrapper" data-anim-stagger="true">
+                            <div class="swiper-slide">
+                                <img src="./assets/images/about01.jpg" alt="about">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./assets/images/about02.jpg" alt="about">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./assets/images/about03.jpg" alt="about">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./assets/images/about04.jpg" alt="about">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./assets/images/about01.jpg" alt="about">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./assets/images/about02.jpg" alt="about">
+                            </div>
+                        </div>
+                        <div class="swiper-nav">
+                            <div class="swiper-button-prev">
+                                <svg class="icon">
+                                    <use href="./assets/images/sprite.svg#icon-arrow-prev"></use>
+                                </svg>
+                            </div>
+                            <div class="swiper-button-next">
+                                <svg class="icon">
+                                    <use href="./assets/images/sprite.svg#icon-arrow-next"></use>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- PROJECTS SECTION -->
+            <section class="section projects" id="projects">
+                <div class="projects__container">
+                    <h2 class="projects__title title" data-anim="fade-up">our projects</h2>
+
+                    <div class="projects__slider" data-anim="fade-up" data-anim-delay="0.3">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="project-item">
+                                    <div class="project-item__content">
+                                        <div class="project-item__text">
+                                            <h3>name of the project</h3>
+                                            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                                                accusantium
+                                                doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo
+                                                inventore
+                                                veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo
+                                                enim
+                                                ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed
+                                                quia
+                                                consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+                                            </p>
+                                            <p> Neque
+                                                porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur,
+                                                adipisci velit, sed quia non numquam eius modi tempora incidunt ut
+                                                labore et
+                                                dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis
+                                                nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut
+                                                aliquid
+                                                ex ea commodi consequatur?</p>
+                                            <p>Quis autem vel eum iure reprehenderit qui in ea
+                                                voluptate velit esse quam nihil molestiae consequatur, vel illum qui
+                                                dolorem
+                                                eum fugiat quo voluptas nulla pariatu</p>
+                                        </div>
+                                        <button class="project-item__btn btn" data-anim="fade-up" data-anim-delay="0.3"
+                                            data-popup-target="#contact-us" type="button">
+                                            <svg class="icon">
+                                                <use href="./assets/images/sprite.svg#icon-phone"></use>
+                                            </svg>
+                                            <span>Get a Free Estimate</span>
+                                        </button>
+                                    </div>
+                                    <div class="project-item__media" data-ba-compare>
+                                        <div class="project-item__img-after">
+                                            <img src="./assets/images/project01.jpg" alt="project">
+                                        </div>
+                                        <div class="project-item__img-before">
+                                            <img src="./assets/images/project02.jpg" alt="project">
+                                        </div>
+
+                                        <button class="project-item__img-handle" aria-label="Порівняти: перетягни або "
+                                            role="slider" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50"
+                                            tabindex="0"><span></span></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="project-item">
+                                    <div class="project-item__content">
+                                        <div class="project-item__text">
+                                            <h3>name of the project</h3>
+                                            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                                                accusantium
+                                                doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo
+                                                inventore
+                                                veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo
+                                                enim
+                                                ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed
+                                                quia
+                                                consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+                                            </p>
+                                            <p> Neque
+                                                porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur,
+                                                adipisci velit, sed quia non numquam eius modi tempora incidunt ut
+                                                labore et
+                                                dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis
+                                                nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut
+                                                aliquid
+                                                ex ea commodi consequatur?</p>
+
+                                        </div>
+                                        <button class="project-item__btn btn" data-anim="fade-up" data-anim-delay="0.3"
+                                            data-popup-target="#contact-us" type="button">
+                                            <svg class="icon">
+                                                <use href="./assets/images/sprite.svg#icon-phone"></use>
+                                            </svg>
+                                            <span>Get a Free Estimate</span>
+                                        </button>
+                                    </div>
+                                    <div class="project-item__media" data-ba-compare>
+                                        <div class="project-item__img-after">
+                                            <img src="./assets/images/project01.jpg" alt="project">
+                                        </div>
+                                        <div class="project-item__img-before">
+                                            <img src="./assets/images/project02.jpg" alt="project">
+                                        </div>
+
+                                        <button class="project-item__img-handle" aria-label="Порівняти: перетягни або "
+                                            role="slider" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50"
+                                            tabindex="0"><span></span></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-nav" data-anim="fade-up" data-anim-delay="0.5">
+                            <div class="swiper-button-prev">
+                                <svg class="icon">
+                                    <use href="./assets/images/sprite.svg#icon-arrow-prev"></use>
+                                </svg>
+                            </div>
+                            <div class="swiper-button-next">
+                                <svg class="icon">
+                                    <use href="./assets/images/sprite.svg#icon-arrow-next"></use>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- WHY CHOICE SECTION -->
+            <section class="section why-choice">
+                <div class="why-choice__container">
+                    <h2 class="why-choice__title title" data-anim="fade-up">why choice us</h2>
+                    <ul class="why-choice__list" data-anim-stagger="true">
+                        <li class="why-choice__item">
+                            <div class="why-choice__item-wrap">
+                                <div class="why-choice__icon">
+                                    <img src="./assets/images/chose.svg" alt="icon choice">
+                                </div>
+                                <h3 class="why-choice__heading">Quality Craftsmanship</h3>
+                                <div class="why-choice__text">
+                                    <p>We deliver precision work, durable materials, and attention to every detail</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="why-choice__item">
+                            <div class="why-choice__item-wrap">
+                                <div class="why-choice__icon">
+                                    <img src="./assets/images/chose.svg" alt="icon choice">
+                                </div>
+                                <h3 class="why-choice__heading">Full-Service Team</h3>
+                                <div class="why-choice__text">
+                                    <p>From design to final build — we manage the entire process in-house.</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="why-choice__item">
+                            <div class="why-choice__item-wrap">
+                                <div class="why-choice__icon">
+                                    <img src="./assets/images/chose.svg" alt="icon choice">
+                                </div>
+                                <h3 class="why-choice__heading">Transparent Process</h3>
+                                <div class="why-choice__text">
+                                    <p>Clear estimates, timelines, and honest communication at every stage.</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="why-choice__item">
+                            <div class="why-choice__item-wrap">
+                                <div class="why-choice__icon">
+                                    <img src="./assets/images/chose.svg" alt="icon choice">
+                                </div>
+                                <h3 class="why-choice__heading">Custom Approach</h3>
+                                <div class="why-choice__text">
+                                    <p>Every project is tailored to your home, style, and budget.</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="why-choice__item">
+                            <div class="why-choice__item-wrap">
+                                <div class="why-choice__icon">
+                                    <img src="./assets/images/chose.svg" alt="icon choice">
+                                </div>
+                                <h3 class="why-choice__heading">Reliable Results</h3>
+                                <div class="why-choice__text">
+                                    <p>On-time delivery, clean job sites, and consistent quality standards.</p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- MAP SECTION -->
+            <section class="section map">
+                <div class="map__container">
+                    <div class="map__content">
+                        <h2 class="map__title title" data-anim="fade-up">visit us</h2>
+                        <div class="map__contacts contacts" data-anim="fade-left" data-anim-delay="0.3">
+                            <ul class="contacts__list">
+                                <li class="contacts__item">
+                                    <a href="tel:+380964691251">+1 999 999 99 99</a>
+                                </li>
+                                <li class="contacts__item">
+                                    <a href="#">Address for example</a>
+                                </li>
+
+                                <li class="contacts__item">
+                                    <a href="mailto:semail@gmail.com">email@gmail.com</a>
+                                </li>
+                                <li class="contacts__item">
+                                    <a href="mailto:semail@gmail.com">Monday-Friday 10 am- 6pm</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="map__img" data-anim="fade-right" data-anim-delay="0.4">
+                        <img src="./assets/images/map.png" alt="map">
+                    </div>
+                    <!-- <div class="map__img">
+                        <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d162759.0614266914!2d30.367544188592827!3d50.40178130681754!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cf4ee15a4505%3A0x764931d2170146fe!2z0JrQuNGX0LIsIDAyMDAw!5e0!3m2!1suk!2sua!4v1762726178221!5m2!1suk!2sua"
+                        width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div> -->
+                </div>
+            </section>
+
+            <!-- SEO SECTION -->
+            <section class="section seo">
+                <div class="seo__container">
+                    <h2 class="seo__title title" data-anim="fade-up">seo-text</h2>
+                    <div class="seo__content text-formatted" data-anim="fade-up" data-anim-delay="0.5">
+                        <p>
+                            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+                            laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
+                            architecto
+                            beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur
+                            aut
+                            odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi
+                            nesciunt.
+                            Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci
+                            velit,
+                            sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat
+                            voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit
+                            laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit
+                            qui
+                            in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum
+                            fugiat
+                            quo voluptas nulla pariatu.Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                            accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore
+                            veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem
+                            quia
+                            voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui
+                            ratione
+                            voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet,
+                            consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur id hic expedita itaque
+                            facere magni molestiae qui veritatis doloremque deserunt, unde aspernatur excepturi quasi
+                            saepe amet quidem labore. Explicabo, voluptatibus.</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer" data-anim="fade-up" data-anim-delay="0.3">
+            <div class="footer__container">
+                <div class="footer__row">
+                    <div class="footer__col">
+                        <a href="#" class="footer__logo"><img src="./assets/images/logo.png" alt="logo" /></a>
+        
+                        <div class="footer__messengers messengers">
+                            <ul class="messengers__list">
+                                <li class="messengers__item">
+                                    <a href="#" class="messengers__link" aria-label="yelp" target="_blank" rel="noopener">
+                                        <img src="./assets/images/yelp.png" alt="yelp">
+                                    </a>
+                                </li>
+                                <li class="messengers__item">
+                                    <a href="#" class="messengers__link" aria-label="thumbtack" target="_blank" rel="noopener">
+                                        <img src="./assets/images/thumbtack.png" alt="thumbtack">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="footer__col">
+                        <div class="footer__contacts contacts">
+                            <ul class="contacts__list">
+                                <li class="contacts__item">
+                                    <a href="tel:+380964691251">+1 999 999 99 99</a>
+                                </li>
+                                <li class="contacts__item">
+                                    <a href="#">Address for example</a>
+                                </li>
+        
+                                <li class="contacts__item">
+                                    <a href="mailto:semail@gmail.com">email@gmail.com</a>
+                                </li>
+                                <li class="contacts__item">
+                                    <a href="mailto:semail@gmail.com">Monday-Friday 10 am- 6pm</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="footer__col">
+                        <div class="footer__social social">
+                            <ul class="social__list">
+                                <li class="social__item">
+                                    <a href="#" class="social__link" aria-label="Facebook" target="_blank" rel="noopener">
+                                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <circle cx="20" cy="20" r="20" fill="#0068BE" />
+                                            <path
+                                                d="M21.2409 28V20.7022H23.6895L24.0569 17.8573H21.2409V16.0412C21.2409 15.2178 21.4686 14.6566 22.6507 14.6566L24.156 14.656V12.1114C23.8957 12.0776 23.0021 12 21.9621 12C19.7904 12 18.3037 13.3256 18.3037 15.7594V17.8573H15.8477V20.7022H18.3037V28H21.2409Z"
+                                                fill="white" />
+                                        </svg>
+                                        <span class="text">Facebook</span>
+                                    </a>
+                                </li>
+                                <li class="social__item">
+                                    <a href="#" class="social__link" aria-label="Instagram" target="_blank" rel="noopener">
+                                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <circle cx="20" cy="20" r="20" fill="url(#paint0_linear_62_1027)" />
+                                            <g clip-path="url(#clip0_62_1027)">
+                                                <path
+                                                    d="M27.9836 16.704C27.9461 15.8539 27.8086 15.2694 27.6117 14.763C27.4085 14.2254 27.096 13.7441 26.6865 13.344C26.2864 12.9377 25.8019 12.6219 25.2705 12.422C24.7612 12.225 24.1797 12.0875 23.3296 12.0501C22.4731 12.0094 22.2012 12 20.0289 12C17.8566 12 17.5847 12.0094 16.7314 12.0469C15.8812 12.0844 15.2968 12.222 14.7905 12.4188C14.2528 12.6219 13.7715 12.9345 13.3714 13.344C12.965 13.7441 12.6494 14.2286 12.4493 14.7599C12.2524 15.2694 12.1149 15.8507 12.0774 16.7009C12.0367 17.5574 12.0273 17.8293 12.0273 20.0016C12.0273 22.1739 12.0367 22.4458 12.0742 23.2991C12.1117 24.1492 12.2493 24.7337 12.4462 25.2401C12.6494 25.7777 12.965 26.259 13.3714 26.6591C13.7715 27.0654 14.2559 27.3812 14.7873 27.5812C15.2968 27.7781 15.8781 27.9156 16.7283 27.9531C17.5815 27.9907 17.8536 28 20.0259 28C22.1982 28 22.4701 27.9907 23.3234 27.9531C24.1735 27.9156 24.758 27.7781 25.2643 27.5812C26.3396 27.1654 27.1897 26.3153 27.6055 25.2401C27.8023 24.7306 27.9399 24.1492 27.9774 23.2991C28.0148 22.4458 28.0242 22.1739 28.0242 20.0016C28.0242 17.8293 28.0211 17.5574 27.9836 16.704ZM26.5428 23.2366C26.5083 24.018 26.3771 24.4399 26.2677 24.7212C25.9988 25.4183 25.4456 25.9715 24.7486 26.2403C24.4673 26.3497 24.0423 26.481 23.2639 26.5153C22.42 26.5529 22.1669 26.5622 20.0321 26.5622C17.8973 26.5622 17.641 26.5529 16.8001 26.5153C16.0187 26.481 15.5968 26.3497 15.3155 26.2403C14.9686 26.1121 14.6529 25.909 14.3966 25.6433C14.1309 25.3838 13.9277 25.0713 13.7995 24.7244C13.6901 24.4431 13.5589 24.018 13.5246 23.2397C13.487 22.3958 13.4777 22.1426 13.4777 20.0078C13.4777 17.873 13.487 17.6167 13.5246 16.776C13.5589 15.9946 13.6901 15.5726 13.7995 15.2913C13.9277 14.9443 14.1309 14.6287 14.3998 14.3723C14.6591 14.1066 14.9716 13.9034 15.3186 13.7754C15.5999 13.666 16.0251 13.5347 16.8033 13.5003C17.6472 13.4628 17.9004 13.4534 20.0351 13.4534C22.1731 13.4534 22.4262 13.4628 23.2671 13.5003C24.0485 13.5347 24.4704 13.666 24.7518 13.7754C25.0986 13.9034 25.4144 14.1066 25.6706 14.3723C25.9363 14.6317 26.1395 14.9443 26.2677 15.2913C26.3771 15.5726 26.5083 15.9976 26.5428 16.776C26.5802 17.6199 26.5896 17.873 26.5896 20.0078C26.5896 22.1426 26.5802 22.3927 26.5428 23.2366Z"
+                                                    fill="white" />
+                                                <path
+                                                    d="M20.0281 15.8906C17.759 15.8906 15.918 17.7316 15.918 20.0008C15.918 22.27 17.759 24.111 20.0281 24.111C22.2974 24.111 24.1383 22.27 24.1383 20.0008C24.1383 17.7316 22.2974 15.8906 20.0281 15.8906ZM20.0281 22.667C18.5561 22.667 17.362 21.473 17.362 20.0008C17.362 18.5286 18.5561 17.3346 20.0281 17.3346C21.5004 17.3346 22.6943 18.5286 22.6943 20.0008C22.6943 21.473 21.5004 22.667 20.0281 22.667Z"
+                                                    fill="white" />
+                                                <path
+                                                    d="M25.261 15.7281C25.261 16.258 24.8313 16.6876 24.3013 16.6876C23.7714 16.6876 23.3418 16.258 23.3418 15.7281C23.3418 15.1981 23.7714 14.7686 24.3013 14.7686C24.8313 14.7686 25.261 15.1981 25.261 15.7281Z"
+                                                    fill="white" />
+                                            </g>
+                                            <defs>
+                                                <linearGradient id="paint0_linear_62_1027" x1="29.5" y1="1.5" x2="10.5" y2="38"
+                                                    gradientUnits="userSpaceOnUse">
+                                                    <stop stop-color="#B3005D" />
+                                                    <stop offset="1" stop-color="#D0A000" />
+                                                </linearGradient>
+                                                <clipPath id="clip0_62_1027">
+                                                    <rect width="16" height="16" fill="white" transform="translate(12 12)" />
+                                                </clipPath>
+                                            </defs>
+                                        </svg>
+                                        <span class="text">Facebook</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer__copyright">@2026</div>
+            </div>
+        </footer>    </div>
+    <div id="contact-us" class="popup" aria-hidden="true">
+        <div class="popup__wrapper">
+            <div class="popup__content">
+                <button class="popup__close close-popup" data-close-popup aria-label="Закрити" type="button"></button>
+    
+                <div class="popup__body">
+                    <h2 class="popup__title">contact us</h2>
+                    <div class="popup__text">Give us a call or fill in the form below and we will contact you.</div>
+                    <a class="popup__link" href="tel:+19999999999">
+                        <svg class="icon">
+                            <use href="./assets/images/sprite.svg#icon-phone"></use>
+                        </svg>
+                        +1 999 999 99 99</a>
+                    <form action="">
+                        <div class="form-group">
+                            <label class="form-label visually-hidden" for="contact-name">Enter your name</label>
+                            <input class="form-input" type="text" name="" id="contact-name" required
+                                placeholder="Enter your name">
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label visually-hidden" for="contact-email">Enter your e-mail</label>
+                            <input class="form-input" type="email" name="" id="contact-email" required
+                                placeholder="Enter your e-mail">
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label visually-hidden" for="contact-phone">Phone number</label>
+                            <input class="form-input" type="text" name="" id="contact-phone" required
+                                placeholder="(___) ___ __ __">
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label visually-hidden" for="contact-city">Enter your city</label>
+                            <input class="form-input" type="text" name="" id="contact-city" required
+                                placeholder="Enter your city">
+                        </div>
+    
+                        <div class="form-group">
+                            <label class="form-label visually-hidden" for="contact-massage">your massage</label>
+                            <textarea class="form-input" name="" id="contact-massage" placeholder="your massage"></textarea>
+                        </div>
+    
+                        <button class="form-btn" type="submit">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="page-loader">
+        <div class="page-loader__inner">
+            <div class="page-loader__logo">
+                <img class="logo-loader" src="./assets/images/logo.png" alt="logo">
+            </div>
+
+            <div class="page-loader__title">lorem ipsum</div>
+            <div class="page-loader__text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua.
+            </div>
+
+            <div class="page-loader__visual">
+                <div class="page-loader__img page-loader__img--center">
+                    <img src="./assets/images/loader01.jpg" alt="Loading">
+                </div>
+
+                <div class="page-loader__img page-loader__img--left">
+                    <img src="./assets/images/loader02.jpg" alt="Loading">
+                </div>
+
+                <div class="page-loader__img page-loader__img--right">
+                    <img src="./assets/images/loader03.jpg" alt="Loading">
+                </div>
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
